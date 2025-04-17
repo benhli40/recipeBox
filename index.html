@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Box</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main id="app">
+    <header>
+      <h1>📦 Recipe Box</h1>
+      <p class="subtitle">Save your favorite meals, snacks, and kitchen creations</p>
+    </header>
+
+    <!-- Recipe Form -->
+    <section id="recipe-form-section">
+      <h2>📝 Add a Recipe</h2>
+      <form id="recipe-form">
+        <input type="text" id="recipe-title" placeholder="Recipe Title" required />
+        <textarea id="recipe-details" placeholder="Ingredients, steps, tips..." required></textarea>
+        <button type="submit">Add Recipe</button>
+      </form>
+    </section>
+
+    <!-- Recipe List -->
+    <section id="recipe-list-section">
+      <h2>📚 Saved Recipes</h2>
+      <div id="recipe-list"></div>
+    </section>
+
+    <!-- Footer Controls -->
+    <section id="controls">
+      <button id="clear-all">🧹 Clear All Recipes</button>
+      <button id="export-txt">📤 Export as TXT</button>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
